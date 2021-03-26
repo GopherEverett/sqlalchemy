@@ -132,8 +132,8 @@ id = db.Column(db.Integer, primary_key=True)
 name = db.Column(db.String(80))
 email = db.Column(db.String(255))
 password = db.Column(db.String(255))
-created_at = db.Column(db.DateTime, default=str(datetime.utcnow()), nullable=False)
-updated_at = db.Column(db.DateTime, default=datetime.utcnow(), nullable=False, onupdate=datetime.now())
+created_at = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
+updated_at = db.Column(db.DateTime, default=datetime.utcnow, nullable=False, onupdate=datetime.now())
 ```
 
 Finally we'll set up a contructor for our `User` model:
@@ -150,6 +150,16 @@ Notice how we do not pass the `created_at` and `updated_at` fields into the cont
 ### Executing Migrations
 
 Now that our `Model` is set up, we can create our database and migrate these changes.
+
+**NOTE: This step is important, if this is forgotten, the migrations will not work.**
+
+First we need to import our model into `app.py`:
+
+```py
+from models.user import User
+```
+
+Without importing our models, the migration script won't be able to keep track of what it looks like and what changes we've made over time.
 
 Run the following in your terminal:
 
