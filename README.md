@@ -164,6 +164,10 @@ Without importing our models, the migration script won't be able to keep track o
 Run the following in your terminal:
 
 ```sh
+createdb flask_db
+```
+
+```sh
 flask db init
 ```
 
