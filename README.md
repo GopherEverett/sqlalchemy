@@ -339,8 +339,8 @@ In this lesson, we learned how to define models using `Flask SQLAlchemy` and how
                 "coordinates": [
                     [
                         [
-                            27.2046,
-                            77.4977
+                            77.4977,
+                            27.2046
                         ]
                     ]
                 ]
