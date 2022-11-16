@@ -1,22 +1,32 @@
 from flask_restful import Resource
 from flask import request
+from models.user import User
+from models.db import db
 # Import user and db here
 
 
 class Users(Resource):
     def get(self):
-        pass
+        data = User.find_all()
+        results = [u.json() for u in data]
+        return results
 
     def post(self):
-        pass
+        data = request.get_json()
+        user = User(**data)
+        user.create()
+        return user.json(), 201
 
 
 class SingleUser(Resource):
     def get(self, id):
-        pass
+        data = User.find_by_id(id)
+        return data.json()
 
     def delete(self, id):
-        pass
+        data = User.delete_user(id)
+        return data
 
     def put(self, id):
-        pass
+        data = User.update_user(id)
+        return data

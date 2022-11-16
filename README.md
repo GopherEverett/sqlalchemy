@@ -324,3 +324,27 @@ In this lesson, we learned how to define models using `Flask SQLAlchemy` and how
 
 - [Python Class Methods](https://www.programiz.com/python-programming/methods/built-in/classmethod)
 - [Flask SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
+
+## Location
+
+```geojson
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -0.12729298301002245,
+                            51.53284601937814
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
+}
