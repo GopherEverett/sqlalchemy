@@ -329,18 +329,18 @@ In this lesson, we learned how to define models using `Flask SQLAlchemy` and how
 
 ```geojson
 {
-    "type": "FeatureCollection",
-    "features": [
-        {
-            "type": "Feature",
-            "properties": {},
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                            33.730565,
-                            -84.38078
-                ]
-            }
-        }
-    ]
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -84.38057031462142,
+          33.7305689376452
+        ],
+        "type": "Point"
+      }
+    }
+  ]
 }
