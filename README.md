@@ -335,7 +335,7 @@ In this lesson, we learned how to define models using `Flask SQLAlchemy` and how
             "type": "Feature",
             "properties": {},
             "geometry": {
-                "type": "Polygon",
+                "type": "Point",
                 "coordinates": [
                             33.730565,
                             -84.38078
