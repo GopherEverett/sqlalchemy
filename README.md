@@ -337,12 +337,8 @@ In this lesson, we learned how to define models using `Flask SQLAlchemy` and how
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
-                    [
-                        [
                             33.730565,
-                            -84.380783
-                        ]
-                    ]
+                            -84.38078
                 ]
             }
         }
